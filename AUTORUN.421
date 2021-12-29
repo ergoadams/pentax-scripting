@@ -1,0 +1,66 @@
+PRINT "Hello World! :)"
+PRINT "             AA"
+PRINT "\n\n\r aaa \n\n"
+PRINT "aaaaaaaaAAAAAAAAaaaaaaaaAA"
+PRINT "The screen is 28 characteraaaaa" ; The 5 a-s overflow
+PRINT "s wide."
+PRINT "©¼Ê"
+PRINT "--" ; Trying out maximum line size aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+PRINT "asd"
+PRINT "TEST"
+PAUSE
+ALLCLR
+PRINT "ASCII ALPHABET TEST"
+PRINT " !#$%&\'("
+PRINT ")*+,-./012"
+PRINT "3456789:;<"
+PRINT "=>?@ABCDEF"
+PRINT "GHIJKLMNOP"
+PRINT "QRSTUVWXYZ"
+PRINT "[\\]^_`abc"
+PRINT "defghijklm"
+PRINT "nopqrstuvwxyz{|}~" ; ~ displays as a +- sign
+PAUSE
+ALLCLR
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PRINT "**************************"
+PAUSE
+CLS 2 2 5
+PAUSE
+PRINT "->"
+PAUSE
+FILEOUT "TEST"
+FSEARCH "TEST.TXT"
+FILEOUT "TEST1"
+%a = FSEARCH
+PRINT "%x" %a
+PAUSE
+
+
+;ALLCLR
+
+%A = 0
+WHILE %A < 10 {
+COLOR %A
+PRINT "COLOR %d" %A
+%A += 1
+}
+PAUSE
+ALLCLR
+WHILE %A < 20 {
+COLOR %A
+PRINT "COLOR %d" %A
+%A += 1
+}
+PAUSE
+
+PAUSE
+EXIT
