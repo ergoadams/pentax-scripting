@@ -22,3 +22,26 @@ for example my camera has `MODSET.TXT` and `AUTORUN.421` with firmware 1.30.0.
 - `IFGOSUB`
 - `WAIT`
 - `LANGUAGE` 
+
+## Different functions
+- 0x10469138 - Firmware update related stuff
+- 0x10472894 - EEPROM related stuff
+- 0x1048846E - Debug menu page 1
+- 0x10488AE4 - Debug menu page 2
+- 0x1048911E - Debug menu page 3
+- 0x1051F24E - Debug menu page 4
+- 0x104B57EE - Loads the script
+- 0x104B5EAA - Some script interpreter code
+- 0x104B640A - Interpreter printing code, atleast for variables
+
+Look for 0x9F8(reg)(32-bit address of ascii string)!
+
+## Gameplan to run custom code on the camera
+1) Identify file loading functions in the firmware
+2) Inject a custom function, that loads code from the SD-card to RAM and jumps to it.
+3) ???
+4) Profit!
+
+More fun but not possible (yet) ways of executing custom code
+- Find a exploit in the script interpreter and make it run code from the firmware
+
