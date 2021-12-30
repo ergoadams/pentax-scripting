@@ -23,6 +23,7 @@ for example my camera has `MODSET.TXT` and `AUTORUN.421` with firmware 1.30.0.
 - `WAIT`
 - `LANGUAGE` 
 
+# Firmware reverse engineering
 ## Different functions
 - 0x10469138 - Firmware update related stuff
 - 0x10472894 - EEPROM related stuff
